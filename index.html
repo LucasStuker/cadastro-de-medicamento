@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <script src='script.js'></script>
+    <title> Cadastro de Medicamentos </title>
+</head>
+<body>
+    <menu>
+        <ul>
+            <li>Home</li>
+            <li>Cadastro de Medicamentos</li>
+            <li>Cadastro de Vacinas</li>
+            <li>Cadastro de Cosméticos</li>
+        </ul>
+    </menu>
+    <header>
+        <div id="img">
+            <img src="remedio.svg">
+            <div>
+            <h1> Cadastro de medicamentos</h1> <br>
+            <h2>Farmacia da gente</h2>
+            </div>
+                       
+         </div>         
+    </header>
+    <section id="secForm">
+        <div>
+            <form onsubmit="cadastro(event)">
+                <label for="remName"> NOME DO MEDICAMENTO </label>
+                <input type="text" required id="fname" name="remName" placeholder="Digite Aqui">
+
+                <label for="remDis"> QUANTIDADE DISPONIVEL</label>
+                <input type="text" required id="fdisp" name="remdisp" placeholder="Apenas Numeros">
+
+                <label for="remUnit"> PREÇO POR UNICADE</label>
+                <input type="text" required id="funit" name="remunid" placeholder="Apenas Numeros">
+
+                <label for="remClass"> CLASSE DO MEDICAMENTO</label>
+                <input type="text" required id="fclass" name="remClass"placeholder="Digite aqui">
+
+                <button type="submit"> CADASTRAR</button>
+            </form>
+        </div>
+    <div id="infoMed">
+        <h3 class="infoTitulo"> Novo medicamento adcionado !</h3>
+            <div class="infContainer">
+                <h3 id="infoMedicamento"> </h3>
+                <h3 id="infoQuantidadeMedicamento"> </h3>
+                <h3 id="infoPrecoMedicamento"> </h3>
+            </div>
+    </div>
+
+    </section>
+</body>
+</html>
